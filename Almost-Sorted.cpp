@@ -49,13 +49,11 @@ string ltrim(const string &str) {
     return s;
 }
 
-string rtrim(const string &str) {
-    string s(str);
-
+std::string rtrim(const std::string &str) {
+    std::string s(str);
     s.erase(
-        find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
+        std::find_if(s.rbegin(), s.rend(), [](unsigned char ch) { return !std::isspace(ch); }).base(),
         s.end()
     );
-
     return s;
 }
