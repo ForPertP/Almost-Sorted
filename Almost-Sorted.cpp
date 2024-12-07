@@ -57,3 +57,15 @@ std::string rtrim(const std::string &str) {
     );
     return s;
 }
+
+
+vector<string> split(const string &str) {
+    vector<string> tokens;
+    std::istringstream iss(str);
+    string token;
+    while (iss >> token) {
+        tokens.push_back(token);
+    }
+    return tokens;
+}
+
