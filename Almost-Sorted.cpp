@@ -58,7 +58,6 @@ std::string rtrim(const std::string &str) {
     return s;
 }
 
-
 vector<string> split(const string &str) {
     vector<string> tokens;
     std::istringstream iss(str);
@@ -68,4 +67,3 @@ vector<string> split(const string &str) {
     }
     return tokens;
 }
-
