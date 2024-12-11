@@ -12,11 +12,15 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
-class Result
+
+class Solution
 {
-
-    public static void almostSorted(List<int> arr)
-
+    public static void Main(string[] args)
     {
-}
+        int n = Convert.ToInt32(Console.ReadLine().Trim());
 
+        List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+
+        Result.almostSorted(arr);
+    }
+}
