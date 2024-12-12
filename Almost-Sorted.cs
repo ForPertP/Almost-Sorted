@@ -12,6 +12,18 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
+class Result
+{
+    static void Swap<T>(List<T> list, int i, int j)
+    {
+        T temp = list[i];
+        list[i] = list[j];
+        list[j] = temp;
+    }    
+
+    public static void almostSorted(List<int> arr)
+}
+
 
 class Solution
 {
